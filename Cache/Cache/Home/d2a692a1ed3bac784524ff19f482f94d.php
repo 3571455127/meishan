@@ -27,7 +27,7 @@
     <style>
         @font-face {
             font-family: 'Roboto';
-            src: url('font/Roboto.ttf');
+            src: url('__PUBLIC__/www/font/Roboto.ttf');
         }
     </style>
     <script type="text/javascript" src="__PUBLIC__/www/js/jquery-3.3.1.min.js"></script>
@@ -92,31 +92,35 @@
         </div>
     </header>
 <div class="index">
-        <!-- Swiper -->
+    <!-- Swiper -->
+    <div class="index-swiper">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide"><a href="<?php echo ($r["link"]); ?>" title="<?php echo ($r["title"]); ?>"><img src="<?php echo ($r["pic"]); ?>" alt="<?php echo ($r["title"]); ?>"></a></div><?php endforeach; endif;?>
+                <?php  $_result=M("slide_data")->field("*")->where("fid = 1 AND status=1 ")->order("id desc")->limit("5")->select();; if ($_result): $n=0;foreach($_result as $key=>$r):++$n;$mod = ($n % 2 );?><div class="swiper-slide"><a href="<?php echo ($r["link"]); ?>" title="<?php echo ($r["title"]); ?>"><img src="<?php echo ($r["pic"]); ?>"
+                                alt="<?php echo ($r["title"]); ?>"></a></div><?php endforeach; endif;?>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+    </div>
 
-        <!-- produtc -->
-        <div class="product">
-            <a name="product"></a>
-            <h3>product</h3>
-            <div class="list">
-                <div class="gallery clearfix">
 
-                    <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><!-- 图文 -->
+    <!-- produtc -->
+    <div class="product">
+        <a name="product"></a>
+        <h3>product</h3>
+        <div class="list">
+            <div class="gallery clearfix">
+
+                <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><!-- 图文 -->
                     <?php if($r['radis']==1) : ?>
                     <div class="content col-lg-6 col-md-6 clearfix">
                         <div class="box-img col-lg-6 col-md-6 col-xs-6">
                             <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                         </div>
                         <div class="txt col-lg-6 col-md-6 col-xs-6">
-                           <?php echo ($r["cont"]); ?>
+                            <?php echo ($r["cont"]); ?>
                         </div>
                     </div>
                     <?php else :?>
@@ -130,39 +134,39 @@
                         </div>
                     </div>
                     <?php endif; endforeach; endif;?>
-                
 
 
+
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <a name="about"></a>
+        <?php getcatvar('page','id = 74','cont');?>
+    </div>
+
+    <div class="partners">
+        <div class="container">
+            <div class="row">
+                <div class="line"></div>
+                <h3>Clients and Partners</h3>
+                <div class="list clearfix">
+                    <?php  $_result=M("Case")->field("id,catid,url,title,title_style,keywords,description,thumb,createtime")->where(" 1  AND status=1  AND catid=108")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><a class="box-img col-lg-2 col-md-2"><img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></a><?php endforeach; endif;?>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- about -->
-        <div class="about">
-            <a name="about"></a>
-            <?php getcatvar('page','id = 74','cont');?>
-        </div>
+    <!-- voice -->
+    <div class="voice">
 
-        <div class="partners">
-            <div class="container">
-                <div class="row">
-                    <div class="line"></div>
-                    <h3>Clients and Partners</h3>
-                    <div class="list clearfix">
-                        <?php  $_result=M("Case")->field("id,catid,url,title,title_style,keywords,description,thumb,createtime")->where(" 1  AND status=1  AND catid=108")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><a class="box-img col-lg-2 col-md-2"><img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>"></a><?php endforeach; endif;?>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- voice -->
-        <div class="voice">
-
-            <div class="container">
-                <div class="row">
-                    <h3>CUSTOMER VOICE</h3>
-                    <div class="list clearfix">
-                        <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=110")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="col-lg-4 col-md-4">
+        <div class="container">
+            <div class="row">
+                <h3>CUSTOMER VOICE</h3>
+                <!-- <div class="list clearfix">
+                    <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=110")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="col-lg-4 col-md-4">
                             <div class="box">
                                 <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>" class="avatar">
                                 <div class="txt">
@@ -171,32 +175,62 @@
                                 <div class="saying"><?php echo ($r["title"]); ?></div>
                             </div>
                         </div><?php endforeach; endif;?>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </div> -->
 
-        <!-- contact -->
-        <div class="contact">
-            <a name="contact"></a>
-            <h3>contact us</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="title">If you are looking for a Trusted Partner, Please do not hesitate to contact us.
-                    </div>
-                    <form name="form" method="post" onsubmit="return beforeSubmit2(this);"
-                        action="index.php?g=Home&a=message">
-            <input name="forward" type="hidden" value="<?php echo ($_SERVER['SERVER_NAME']); if($catid) : ?>/index.php?m=<?php echo ($Categorys[$catid]['module']); ?>&a=index&id=<?php echo ($catid); else :?>/index.php<?php endif;?>"/>
-                        <div class="clearfix" style="padding-bottom:20px">
-            <?php getcatvar('page','id = 78','cont');?>
+                <!-- Swiper -->
+                <div class="list">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=110")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="swiper-slide">
+                                    <div class="box">
+                                        <div class="images"> <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>" class="avatar">
+                                        </div>
+                                        <div class="voice-bg">
+                                            <div class="txt">
+                                                <?php echo ($r["cont"]); ?>
+                                            </div>
+                                            <div class="saying"><?php echo ($r["title"]); ?></div>
+                                        </div>
+
+                                    </div>
+
+                                </div><?php endforeach; endif;?>
+
                         </div>
-                        <input type="submit" value="SUBMIT" class="submit-btn">
-                    </form>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
-            </div>
 
+
+
+            </div>
         </div>
     </div>
+
+    <!-- contact -->
+    <div class="contact">
+        <a name="contact"></a>
+        <h3>contact us</h3>
+        <div class="container">
+            <div class="row">
+                <div class="title">If you are looking for a Trusted Partner, Please do not hesitate to contact us.
+                </div>
+                <form name="form" method="post" onsubmit="return beforeSubmit2(this);"
+                    action="index.php?g=Home&a=message">
+                    <input name="forward" type="hidden"
+                        value="<?php echo ($_SERVER['SERVER_NAME']); if($catid) : ?>/index.php?m=<?php echo ($Categorys[$catid]['module']); ?>&a=index&id=<?php echo ($catid); else :?>/index.php<?php endif;?>" />
+                    <div class="clearfix" style="padding-bottom:20px">
+                        <?php getcatvar('page','id = 78','cont');?>
+                    </div>
+                    <input type="submit" value="SUBMIT" class="submit-btn">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
  <!--footer -->
     <footer>
         <div class="info">

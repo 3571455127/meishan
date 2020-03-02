@@ -1,15 +1,31 @@
 $(function () {
-     var swiper = new Swiper('.index .swiper-container', {
-         loop: true,
-         autoplay: true,
-         pagination: {
-             el: '.index .swiper-pagination',
-         },
-         navigation: {
-             nextEl: '.index .swiper-button-next',
-             prevEl: '.index .swiper-button-prev',
-         },
-     });
+    var swiper = new Swiper('.index .index-swiper .swiper-container', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: '.index .index-swiper .swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.index .index-swiper .swiper-button-next',
+            prevEl: '.index .index-swiper .swiper-button-prev',
+        },
+    });
+
+    var swiper = new Swiper('.index .voice .swiper-container', {
+        loop: true,
+        // autoplay: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.index .voice .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.index .voice .swiper-button-next',
+            prevEl: '.index .voice .swiper-button-prev',
+        },
+    });
 
     // nav
     $("header .nav li").mouseover(function () {
