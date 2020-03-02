@@ -1,0 +1,1 @@
+<?php	return array ( 'product' => '73', 'about' => '74', 'Partners' => '108', 'customer' => '110', 'contact' => '78', 'thanks' => '103', );?>

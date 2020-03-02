@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="wap-font-scale" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="Robots" content="all">
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <title>{if MODULE_NAME != 'Index'}{$seo_title}{else}{$site_name}{/if}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="__PUBLIC__/www/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/swiper-4.5.0.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/animate.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/www/css/main.css">
+
+    <!-- 字体引入 -->
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('font/Roboto.ttf');
+        }
+    </style>
+    <script type="text/javascript" src="__PUBLIC__/www/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <!-- 顶部联系信息 -->
+                <div class="top-bar clearfix">
+                    <!-- 电话与邮箱 -->
+                    <div class="infos col-lg-9 col-md-9 col-sm-9">
+                        <div class="wechat col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <img src="__PUBLIC__/www/images/wechat.png" alt="">
+                            <span>Wechat:{$phone}</span></div>
+                        <div class="phone col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <img src="__PUBLIC__/www/images/phone.png" alt="">
+                            <span>Whatsapp:{$Whatsapp}</span>
+                        </div>
+                        <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <img src="__PUBLIC__/www/images/email.png" alt="">
+                            <span>{$email}</span></div>
+                    </div>
+                    <!-- 社媒 -->
+                    <div class="medias col-lg-3 col-md-3 col-sm-3">
+                        <div class="top-share clearfix">
+                            <a href="{$facebook}" target="_blank" rel="noopener">
+                                <img src="__PUBLIC__/www/images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="{$twitter}" target="_blank" rel="noopener">
+                                <img src="__PUBLIC__/www/images/twitter.png" alt="twitter">
+                            </a>
+                            <a href="{$ins}" target="_blank" rel="noopener">
+                                <img src="__PUBLIC__/www/images/linkedin.png" alt="linkedin">
+                            </a>
+                            <a href="{$youtube}" target="_blank" rel="noopener">
+                                <img src="__PUBLIC__/www/images/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 导航 -->
+                <div class="nav clearfix">
+                    <div class="logo col-lg-6 col-md-6 col-sm-6">
+                        <img src="__PUBLIC__/www/images/logo.png" alt="">
+                        <div class="ad">one-stop creative modular solutions</div>
+                    </div>
+                    <div class="list col-lg-6 col-md-6 col-sm-6">
+                        <ul class="clearfix">
+                            <li class="nav-active"><a href="javascript:;">HOME</a></li>
+                            <li><a href="#product">PRODUCT</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
