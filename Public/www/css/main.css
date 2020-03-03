@@ -689,7 +689,7 @@ footer .copy {
 @media screen and (max-width:1366px) {
 
     .index .list .content {
-        min-height: 380px;
+        height: 260px;
     }
 
     .index .list .content .box-img img {

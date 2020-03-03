@@ -424,3 +424,25 @@ footer .info .copy {
     font-size: 14px;
     padding-top: 30px;
 }
+
+header .menu {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    z-index: 9999;
+}
+
+header .menu .nav-ul {
+    position: absolute;
+    top: 1px;
+    left: 32px;
+    background-color: #fe641d;
+    padding: 10px;
+    display: none;
+}
+
+header .menu .nav-ul a {
+    color: #fff;
+    display: block;
+    padding-bottom: 10px;
+}

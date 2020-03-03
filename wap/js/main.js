@@ -29,6 +29,29 @@ $(function () {
     });
 
 
+    // 导航
+    $("header .menu .menu-btn").click(function () {
+        // $("header .menu .nav-ul").show(600);
+        var flag = $(this).next().is(':hidden');
+        console.log(flag);
+        if (flag) {
+            $(this).next().show(600);
+        } else {
+            $(this).next().hide(600);
+        }
+    })
+    $("header .menu .nav-ul a").click(function () {
+        $("header .menu .nav-ul").hide();
+    })
+
+    $(window).scroll(function () {
+        /* 判断滚动条 距离页面顶部的距离 100可以自定义*/
+        if ($(window).scrollTop() > 100) {
+            $("header .menu .nav-ul").hide();
+        }
+
+    });
+
 
 })
 
