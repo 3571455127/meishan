@@ -1,93 +1,97 @@
-<!-- 中间内容 -->
-    <!--轮播图-->
+
     <div class="index">
-        <div class="swiper-container swiper-container1">
+        <!-- banner 轮播 -->
+        <div class="swiper-container">
             <div class="swiper-wrapper">
-                <YP:flash flashid="2" />
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </div>
-
-    <!--关于我们-->
-        <div class="index_about">
-            <img src="__PUBLIC__/wap/images/about.jpg" alt="" />
-            <div>
-                <h4>ABOUT US</h4>
-                <p>GUANGDONG METAL FORMING MACHINE WORKS CO.,LTD is a forging equipment manufacturer integrating professional design, research and development, manufacturing and service in South China. Is the first batch of domestic forging industry through ISO9001 enterprises, and has the "national backbone enterprise for forging equipment" and "national export bases", "national high-tech enterprises" more than ten honors.</p>
-            </div>
-            <br/>
-            <a class="more" href="/about.html">VIEW MORE</a>
-        </div>
-        
-    <!--首页产品列表-->
-    <div class="index_content">
-        <div class="index_pro" >
-            <h4 class="bioati">PRODUCTS</h4>
-            <div class="pro_list">
-                <div>
-                    <h4 class="biaoti_h4 active">PUNCHING MACHINE<span></span></h4>
-                    <h4 class="biaoti_h4">HYDRAULIC PRESS<span></span></h4>
-                </div>
-                <ul class="pro_list_ul" >
-                    <YP:list catid="94" limit="3" order="id asc">
-                    <li>
-                        <a href="{$r.url}">
-                            <img src="{$r.thumb}" alt="" />
-                            <h5>{$r.keywords}</h5>
-                            <p>{$r.title}</p>
-                        </a>
-                    </li>
-                    </YP:list>
-                </ul>
-                <ul class="pro_list_ul" style="display: none;">
-                    <YP:list catid="95" limit="3" order="id asc">
-                    <li>
-                        <a href="{$r.url}">
-                            <img src="{$r.thumb}" alt="" />
-                            <h5>{$r.keywords}</h5>
-                            <p>{$r.title}</p>
-                        </a>
-                    </li>
-                    </YP:list>
-                </ul>
-                <a class="more" href="/product.html">VIEW MORE</a>
-            </div>
-        </div>
-        <!--首页案例-->
-        <div class="case_list">
-            <h4 class="bioati">CASES</h4>
-            <ul class="case_list">
-                <YP:list catid="77" limit="2" order="id asc">
-                <li>
-                    <img src="{$r.thumb}" alt="" />
-                    <a href="{$r.url}">
-                        <h5>{$r.title}</h5>
-                    </a>
-                </li>
-                </YP:list>            
-            </ul>
-            <a class="more" href="/cases.html">VIEW MORE</a>
-        </div>
-        
-        <!--新闻列表-->
-        <div class="index_new">
-            <h4 class="bioati">NEWS</h4>
-            <ul class="new_ul">
-                <YP:list catid="108" limit="3" order="id asc">
-                <li>
-                    <a href="{$r.url}">
-                        <h5>{$r.title}</h5>
-                        <span>{$r.createtime|toDate=###,'Y-m-d'}</span>
-                        <p>{$r.description}</p>
-                    </a>
-                </li>
+                <YP:list name="slide_data" id="r" limit="5" field="*" where="fid = 2" key="n">
+                    <div class="swiper-slide"><a href="{$r.link}" title="{$r.title}"><img src="{$r.pic}"
+                                alt="{$r.title}"></a></div>
                 </YP:list>
-            </ul>
-            <a class="more" href="/news.html">VIEW MORE</a>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-        
-        
+
+        <!-- product -->
+        <div class="product">
+            <h3>PRODUCTS</h3>
+            <div class="box">
+                <YP:list order="listorder desc" catid="73" id="r" limit="12" field='thumb,title,radis,cont,listorder,id,pcont'>
+                <div class="list">
+                    <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}"></div>
+                    <div class="content">
+                       {$r.pcont}
+                    </div>
+                </div>
+                </YP:list>
+                
+            </div>
+        </div>
+
+        <!-- about -->
+        <div class="about">
+             <?php getcatvar('page','id = 74','pcont');?>
+
+        </div>
+
+        <!-- partners -->
+        <div class="partners">
+            <h3>Clients and Partners</h3>
+            <div class="list clearfix">
+                <YP:list order="listorder desc" catid="108" id="r" limit="12">
+                <a class="box-img"><img src="{$r.thumb}" alt="{$r.title}"></a>
+                </YP:list>
+                <!--<a class="box-img"><img src="__PUBLIC__/wap/images/partners2.png" alt=""></a>-->
+            </div>
+        </div>
+
+
+        <!-- voice -->
+        <div class="voice">
+            <h3>CUSTOMER VOICE</h3>
+            <div class="voice-swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <YP:list order="listorder desc" catid="110" id="r" limit="12"
+                                field='thumb,title,cont,listorder,id'>
+                        <div class="swiper-slide">
+                            <div class="box">
+                                <div class="box-img"> <img src="{$r.thumb}" alt="{$r.title}" class="avatar"></div>
+
+                                <div class="txt">
+                                    {$r.cont}
+                                </div>
+                                <div class="saying">{$r.title}</div>
+                            </div>
+                        </div>
+                        </YP:list>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Contact Us -->
+        <div class="contact">
+            <a name="contact"></a>
+            <h3>Contact Us</h3>
+            <form name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message">
+                <div class="clearfix">
+<input name="forward" type="hidden"
+                        value="{$_SERVER['SERVER_NAME']}{if $catid}/index.php?m={$Categorys[$catid]['module']}&a=index&id={$catid}{else}/index.php{/if}" />
+                    <div class="clearfix" style="padding-bottom:20px">
+                        <?php getcatvar('page','id = 78','pcont');?>
+                </div>
+                <div class="btn-box">
+                    <input type="submit" value="SUBMIT" class="submit-btn">
+                </div>
+
+            </form>
+        </div>
+
+
     </div>
+
+    
