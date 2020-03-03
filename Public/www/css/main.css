@@ -301,12 +301,12 @@ header .nav .list .nav-active a {
 }
 
 
-.index .list .content .pro-download>img {
+.index .list .content .pro-download .downbtns {
     width: 20px;
     height: 20px;
 }
 
-.index .list .content .pro-download a img {
+.index .list .content .pro-download a:nth-child(2) img {
     width: 80px;
     height: 20px;
 }
@@ -695,6 +695,7 @@ footer .copy {
     .index .list .content {
         height: 270px;
     }
+
     .index .list .txt {
         height: 260px;
     }
