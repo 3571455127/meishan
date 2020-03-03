@@ -317,7 +317,7 @@ header .nav .list .nav-active a {
 
 .index .list .content .txt .pro-download {
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     right: 50px
 }
 
@@ -684,11 +684,18 @@ footer .copy {
     .index .list .content {
         height: 360px;
     }
+
+    .index .list .txt {
+        height: 340px;
+    }
 }
 
 @media screen and (max-width:1366px) {
 
     .index .list .content {
+        height: 270px;
+    }
+    .index .list .txt {
         height: 260px;
     }
 
