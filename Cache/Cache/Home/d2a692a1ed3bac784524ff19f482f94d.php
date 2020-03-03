@@ -164,7 +164,7 @@
 
         <div class="container">
             <div class="row">
-                <h3>CUSTOMER VOICE</h3>
+                <h3>customer feedback</h3>
                 <!-- <div class="list clearfix">
                     <?php  $_result=M("Customer")->field("thumb,title,cont,listorder,id")->where(" 1  AND status=1  AND catid=110")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="col-lg-4 col-md-4">
                             <div class="box">

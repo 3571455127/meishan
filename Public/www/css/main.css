@@ -305,10 +305,12 @@ header .nav .list .nav-active a {
     width: 20px;
     height: 20px;
 }
-.index .list .content .pro-download a img{
+
+.index .list .content .pro-download a img {
     width: 80px;
     height: 20px;
 }
+
 .index .list .content .txt .pro-shares a:last-child {
     padding-right: 0;
 }
@@ -468,23 +470,14 @@ header .nav .list .nav-active a {
 }
 
 .index .voice h3 {
-    width: 820px;
+    /* width: 820px; */
+    margin-bottom: 0;
 }
 
 .index .voice .list {
-    padding: 100px 0 150px;
+    padding-bottom: 80px;
 }
 
-
-/* .index .voice .list .box {
-    background-color: #fff;
-    height: 370px;
-    position: relative;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border-bottom: 3px solid #f26221;
-}
- */
 .index .voice .list .box .avatar {
     width: 95px;
     height: 95px;
@@ -627,6 +620,10 @@ footer .info {
 footer .info .box {
     padding-top: 15px;
     font-size: 14px;
+}
+
+footer .info .row .box:nth-child(2) div:first-child {
+    padding-left: 110px;
 }
 
 footer .info p {
