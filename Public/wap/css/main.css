@@ -265,14 +265,13 @@ header .shaer a {
     width: 84px;
     height: 84px;
     border-radius: 50%;
-    border-bottom: 2px solid #f26122;
 }
 
 .index .voice .voice-swiper .box .box-img img {
     width: 84px;
     height: 84px;
     border-radius: 50%;
-    border-bottom: 2px solid #f26122;
+    border: 2px solid #f26122;
 }
 
 .index .voice .voice-swiper .box .txt {
