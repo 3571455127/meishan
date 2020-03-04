@@ -493,6 +493,10 @@ header .nav .list .nav-active a {
     font-size: 13px;
     padding-top: 80px;
     color: #4E4C41;
+    height: 312px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
 }
 
 .index .voice .list .box .saying {
