@@ -710,3 +710,7 @@ footer .copy {
         object-fit: cover;
     }
 }
+
+.emails {
+    color: #524F3F;
+}

@@ -52,7 +52,7 @@
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <img src="__PUBLIC__/www/images/email.png" alt="">
-                            <span><?php echo ($email); ?></span></div>
+                            <a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <!-- 社媒 -->
                     <div class="medias col-lg-3 col-md-3 col-sm-3">
@@ -249,7 +249,7 @@
                     <div class="box clearfix">
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/phone-b.png" alt=""><?php echo ($phonea); ?></div>
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/fax.png" alt=""><?php echo ($domestic_fax); ?></div>
-                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/email.png" alt=""><?php echo ($email); ?></div>
+                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/email.png" alt=""><a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <p> COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</p>
                 </div>

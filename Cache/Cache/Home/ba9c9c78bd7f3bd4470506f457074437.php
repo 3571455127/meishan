@@ -63,6 +63,7 @@
 
         <!-- product -->
         <div class="product">
+            <a name="about"></a>
             <h3>PRODUCTS</h3>
             <div class="box">
                 <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id,pcont")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="list">
@@ -77,6 +78,7 @@
 
         <!-- about -->
         <div class="about">
+            <a name="about"></a>
              <?php getcatvar('page','id = 74','pcont');?>
 
         </div>
@@ -156,7 +158,7 @@
                         <div class="box-img"><img src="__PUBLIC__/wap/images/fax.png" alt=""></div><?php echo ($domestic_fax); ?>
                     </li>
                     <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div><?php echo ($email); ?>
+                        <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div><a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a>
                     </li>
 
                     <li>COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</li>
