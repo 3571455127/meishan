@@ -262,7 +262,7 @@ header .shaer a {
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
-
+    border-bottom: 2px solid #f26122;
 }
 
 .index .voice .voice-swiper .box .box-img img {
