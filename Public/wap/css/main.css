@@ -262,6 +262,9 @@ header .shaer a {
     top: -45px;
     left: 50%;
     transform: translateX(-50%);
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
     border-bottom: 2px solid #f26122;
 }
 
@@ -269,6 +272,7 @@ header .shaer a {
     width: 84px;
     height: 84px;
     border-radius: 50%;
+    border-bottom: 2px solid #f26122;
 }
 
 .index .voice .voice-swiper .box .txt {
