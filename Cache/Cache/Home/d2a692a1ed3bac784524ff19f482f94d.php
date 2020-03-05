@@ -52,7 +52,7 @@
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <img src="__PUBLIC__/www/images/email.png" alt="">
-                            <a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
+                            <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <!-- 社媒 -->
                     <div class="medias col-lg-3 col-md-3 col-sm-3">
@@ -76,7 +76,7 @@
                 <!-- 导航 -->
                 <div class="nav clearfix">
                     <div class="logo col-lg-6 col-md-6 col-sm-6">
-                        <img src="__PUBLIC__/www/images/logo.png" alt="">
+                        <a href="mailto:<?php echo ($email); ?>" target="_blank"> <img src="__PUBLIC__/www/images/logo.png" alt=""></a>
                         <div class="ad">one-stop creative modular solutions</div>
                     </div>
                     <div class="list col-lg-6 col-md-6 col-sm-6">
@@ -249,7 +249,7 @@
                     <div class="box clearfix">
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/phone-b.png" alt=""><?php echo ($phonea); ?></div>
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/fax.png" alt=""><?php echo ($domestic_fax); ?></div>
-                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/email.png" alt=""><a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
+                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/email.png" alt=""><a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <p> COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</p>
                 </div>

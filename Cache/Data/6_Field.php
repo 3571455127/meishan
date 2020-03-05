@@ -1,7 +1,7 @@
-<?php	return array ( 'catid' => array ( 'id' => '42', 'moduleid' => '6', 'field' => 'catid', 'name' => '栏目', 'tips' => '', 'required' => '1', 'minlength' => '1', 'maxlength' => '6', 'pattern' => '', 'errormsg' => '必须选择一个栏目', 'class' => '', 'type' => 'catid', 'setup' => '', 'ispost' => '1', 'unpostgroup' => '', 'listorder' => '0', 'status' => '1', 'issystem' => '1', ), 'title' => array ( 'id' => '43', 'moduleid' => '6', 'field' => 'title', 'name' => '标题', 'tips' => '', 'required' => '1', 'minlength' => '1', 'maxlength' => '80', 'pattern' => '', 'errormsg' => '标题必须为1-80个字符', 'class' => '', 'type' => 'title', 'setup' => 'array (
-  \'thumb\' => \'1\',
-  \'style\' => \'1\',
-  \'size\' => \'55\',
+<?php	return array ( 'catid' => array ( 'id' => '42', 'moduleid' => '6', 'field' => 'catid', 'name' => '栏目', 'tips' => '', 'required' => '1', 'minlength' => '1', 'maxlength' => '6', 'pattern' => '', 'errormsg' => '必须选择一个栏目', 'class' => '', 'type' => 'catid', 'setup' => '', 'ispost' => '1', 'unpostgroup' => '', 'listorder' => '0', 'status' => '1', 'issystem' => '1', ), 'title' => array ( 'id' => '43', 'moduleid' => '6', 'field' => 'title', 'name' => '标题(图片比例:480*360)', 'tips' => '', 'required' => '1', 'minlength' => '1', 'maxlength' => '80', 'pattern' => '0', 'errormsg' => '标题必须为1-80个字符', 'class' => '', 'type' => 'title', 'setup' => 'array (
+  \\\'thumb\\\' => \\\'1\\\',
+  \\\'style\\\' => \\\'1\\\',
+  \\\'size\\\' => \\\'55\\\',
 )', 'ispost' => '1', 'unpostgroup' => '', 'listorder' => '0', 'status' => '1', 'issystem' => '1', ), 'keywords' => array ( 'id' => '44', 'moduleid' => '6', 'field' => 'keywords', 'name' => 'Model', 'tips' => '', 'required' => '0', 'minlength' => '0', 'maxlength' => '80', 'pattern' => '0', 'errormsg' => '', 'class' => '', 'type' => 'text', 'setup' => 'array (
   \\\'size\\\' => \\\'55\\\',
   \\\'default\\\' => \\\'\\\',
@@ -34,6 +34,20 @@
   \\\'replacenum\\\' => \\\'\\\',
   \\\'enablesaveimage\\\' => \\\'0\\\',
   \\\'flashupload\\\' => \\\'0\\\',
+  \\\'alowuploadexts\\\' => \\\'\\\',
+  \\\'alowuploadlimit\\\' => \\\'\\\',
+)', 'ispost' => '1', 'unpostgroup' => '', 'listorder' => '5', 'status' => '1', 'issystem' => '0', ), 'pcont' => array ( 'id' => '150', 'moduleid' => '6', 'field' => 'pcont', 'name' => '移动端内容', 'tips' => '', 'required' => '0', 'minlength' => '0', 'maxlength' => '0', 'pattern' => '0', 'errormsg' => '', 'class' => '', 'type' => 'editor', 'setup' => 'array (
+  \\\'edittype\\\' => \\\'kindeditor\\\',
+  \\\'toolbar\\\' => \\\'full\\\',
+  \\\'default\\\' => \\\'\\\',
+  \\\'height\\\' => \\\'\\\',
+  \\\'show_add_description\\\' => \\\'0\\\',
+  \\\'show_auto_thumb\\\' => \\\'0\\\',
+  \\\'showpage\\\' => \\\'0\\\',
+  \\\'enablekeylink\\\' => \\\'0\\\',
+  \\\'replacenum\\\' => \\\'\\\',
+  \\\'enablesaveimage\\\' => \\\'0\\\',
+  \\\'flashupload\\\' => \\\'1\\\',
   \\\'alowuploadexts\\\' => \\\'\\\',
   \\\'alowuploadlimit\\\' => \\\'\\\',
 )', 'ispost' => '1', 'unpostgroup' => '', 'listorder' => '5', 'status' => '1', 'issystem' => '0', ), 'pic' => array ( 'id' => '54', 'moduleid' => '6', 'field' => 'pic', 'name' => '多图', 'tips' => '', 'required' => '0', 'minlength' => '0', 'maxlength' => '0', 'pattern' => '0', 'errormsg' => '', 'class' => '', 'type' => 'images', 'setup' => 'array (
