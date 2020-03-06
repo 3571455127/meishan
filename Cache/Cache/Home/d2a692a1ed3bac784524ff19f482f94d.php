@@ -51,8 +51,9 @@
                             <span>Whatsapp:<?php echo ($Whatsapp); ?></span>
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <img src="__PUBLIC__/www/images/email.png" alt="">
-                            <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
+                            <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
+                                <img src="__PUBLIC__/www/images/email.png" alt="">
+                                <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <!-- 社媒 -->
                     <div class="medias col-lg-3 col-md-3 col-sm-3">
@@ -81,7 +82,7 @@
                     </div>
                     <div class="list col-lg-6 col-md-6 col-sm-6">
                         <ul class="clearfix">
-                            <li class="nav-active"><a href="javascript:;">HOME</a></li>
+                            <li class="nav-active"><a href="/index.php">HOME</a></li>
                             <li><a href="#product">PRODUCT</a></li>
                             <li><a href="#about">About us</a></li>
                             <li><a href="#contact">Contact us</a></li>
@@ -118,6 +119,8 @@
                     <div class="content col-lg-6 col-md-6 clearfix">
                         <div class="box-img col-lg-6 col-md-6 col-xs-6">
                             <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                            <a class="link" href="" target="_blank"><img src="__PUBLIC__/www/images/link.png"
+                                    alt=""></a>
                         </div>
                         <div class="txt col-lg-6 col-md-6 col-xs-6">
                             <?php echo ($r["cont"]); ?>
@@ -131,6 +134,8 @@
                         </div>
                         <div class="box-img col-lg-6 col-md-6 col-xs-6">
                             <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
+                            <a class="link" href="" target="_blank"><img src="__PUBLIC__/www/images/link.png"
+                                alt=""></a>
                         </div>
                     </div>
                     <?php endif; endforeach; endif;?>
@@ -249,7 +254,7 @@
                     <div class="box clearfix">
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/phone-b.png" alt=""><?php echo ($phonea); ?></div>
                         <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/fax.png" alt=""><?php echo ($domestic_fax); ?></div>
-                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/email.png" alt=""><a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a></div>
+                        <div class="col-lg-4 col-md-4"><a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"><img src="__PUBLIC__/www/images/email.png" alt=""> <span><?php echo ($email); ?></span></a></div>
                     </div>
                     <p> COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</p>
                 </div>

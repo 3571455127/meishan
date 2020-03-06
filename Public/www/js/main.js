@@ -13,7 +13,7 @@ $(function () {
 
     var swiper = new Swiper('.index .voice .swiper-container', {
         loop: true,
-        // autoplay: true,
+        autoplay: true,
         slidesPerView: 3,
         spaceBetween: 30,
         loopFillGroupWithBlank: true,

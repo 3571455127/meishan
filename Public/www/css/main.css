@@ -714,3 +714,17 @@ footer .copy {
 .emails {
     color: #524F3F;
 }
+
+.index .product .list .box-img {
+    position: relative;
+}
+
+.index .product .list .box-img .link {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.index .product .list .box-img .link img {
+    width: 80%;
+}
