@@ -48,7 +48,8 @@
                             <span>Wechat:<?php echo ($phone); ?></span></div>
                         <div class="phone col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <img src="__PUBLIC__/www/images/phone.png" alt="">
-                            <span>Whatsapp:<?php echo ($Whatsapp); ?></span>
+                            <a href="https://web.whatsapp.com/send?phone=6592383882&text=" target="_blank">
+                                <span>Whatsapp:<?php echo ($Whatsapp); ?></span></a>
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
@@ -237,42 +238,49 @@
     </div>
 </div>
  <!--footer -->
-    <footer>
-        <div class="info">
-            <div class="container">
-                <div class="row">
-                    <div class="box clearfix">
-                        <div class="col-lg-7 col-md-7">
-                            <img src="__PUBLIC__/www/images/address.png" alt="">
-                            <?php echo ($address); ?>
-                        </div>
-                        <div class="col-lg-5 col-md-5">
-                            <img src="__PUBLIC__/www/images/url.png" alt="">
-                            <?php echo ($wwwurl); ?>
-                        </div>
-                    </div>
-                    <div class="box clearfix">
-                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/phone-b.png" alt=""><?php echo ($phonea); ?></div>
-                        <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/fax.png" alt=""><?php echo ($domestic_fax); ?></div>
-                        <div class="col-lg-4 col-md-4"><a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"><img src="__PUBLIC__/www/images/email.png" alt=""> <span><?php echo ($email); ?></span></a></div>
-                    </div>
-                    <p> COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</p>
-                </div>
-            </div>
+ <footer>
+     <div class="info">
+         <div class="container">
+             <div class="row">
+                 <div class="box clearfix">
+                     <div class="col-lg-7 col-md-7">
+                         <img src="__PUBLIC__/www/images/address.png" alt="">
+                         <?php echo ($address); ?>
+                     </div>
+                     <div class="col-lg-5 col-md-5">
+                         <img src="__PUBLIC__/www/images/url.png" alt="">
+                         <?php echo ($wwwurl); ?>
+                     </div>
+                 </div>
+                 <div class="box clearfix">
+                     <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/phone-b.png" alt=""><?php echo ($phonea); ?></div>
+                     <div class="col-lg-4 col-md-4"><img src="__PUBLIC__/www/images/fax.png" alt=""><?php echo ($domestic_fax); ?>
+                     </div>
+                     <div class="col-lg-4 col-md-4"><a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails"><img
+                                 src="__PUBLIC__/www/images/email.png" alt=""> <span><?php echo ($email); ?></span></a></div>
+                 </div>
+                 <p> COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</p>
+             </div>
+         </div>
 
-        </div>
-        <div class="copy"> <?php echo ($cop); ?></div>
+     </div>
+     <div class="copy"> <?php echo ($cop); ?></div>
 
-        <div class="goTop" style="display: block;">
-            <i class="topIcon"></i>
-            <p>TOP</p>
-        </div>
-    </footer>
+     <div class="goTop" style="display: block;">
+         <i class="topIcon"></i>
+         <p>TOP</p>
+     </div>
 
-</body>
+     <div class="whatsapp">
+         <a href="https://web.whatsapp.com/send?phone=6592383882&text=" target="_blank"><img
+                 src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
+     </div>
+ </footer>
 
-<script type="text/javascript" src="__PUBLIC__/www/js/swiper-4.5.0.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/www/js/wow.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/www/js/main.js"></script>
+ </body>
 
-</html>
+ <script type="text/javascript" src="__PUBLIC__/www/js/swiper-4.5.0.min.js"></script>
+ <script type="text/javascript" src="__PUBLIC__/www/js/wow.min.js"></script>
+ <script type="text/javascript" src="__PUBLIC__/www/js/main.js"></script>
+
+ </html>

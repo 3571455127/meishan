@@ -711,7 +711,8 @@ footer .copy {
     }
 }
 
-.emails {
+.emails,
+.whatsa {
     color: #524F3F;
 }
 
@@ -727,4 +728,18 @@ footer .copy {
 
 .index .product .list .box-img .link img {
     width: 80%;
+}
+
+footer .whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+}
+
+footer .whatsapp a {
+    cursor: pointer;
+}
+
+footer .whatsapp img {
+    cursor: pointer;
 }
