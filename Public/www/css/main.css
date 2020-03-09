@@ -317,8 +317,8 @@ header .nav .list .nav-active a {
 
 .index .list .content .txt .pro-download {
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 14px;
+    right: 30px;
 }
 
 .index .list .content .txt .pro-download img {
@@ -686,6 +686,14 @@ footer .copy {
     padding-top: 32px;
 }
 
+.index .product .product-share,
+.index .product .product-share2 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+}
+
 /* 响应式处理 */
 @media screen and (max-width:1920px) {
 
@@ -818,13 +826,7 @@ header .top-bar .infos .wechat:hover .code {
     background-image: url("../images/link.png") !important;
 }
 
-.index .product .product-share,
-.index .product .product-share2 {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translateY(-50%);
-}
+
 
 .product .product-boxs {
     position: relative;
