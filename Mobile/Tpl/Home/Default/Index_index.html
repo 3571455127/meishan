@@ -13,7 +13,13 @@
     <!-- product -->
     <div class="product">
         <a name="about"></a>
-        <h3>PRODUCTS</h3>
+
+        <div class="product-boxs">
+            <h3>PRODUCTS</h3>
+            <div class="product-share">
+                <div class="addthis_inline_share_toolbox_m0jr"></div>
+            </div>
+        </div>
         <div class="box">
             <YP:list order="listorder desc" catid="73" id="r" limit="12"
                 field='thumb,title,radis,cont,listorder,id,pcont'>
@@ -22,9 +28,7 @@
                         <a href="" target="_blank"><img src="__PUBLIC__/wap/images/link.png" alt=""></a></div>
                     <div class="content">
                         {$r.pcont}
-                        <div class="product-share">
-                            <div class="addthis_inline_share_toolbox_m0jr"></div>
-                        </div>
+
                     </div>
                 </div>
             </YP:list>

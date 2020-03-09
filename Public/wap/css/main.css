@@ -140,9 +140,11 @@ header .shaer a {
 
 .index .product .content .pro-download {
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
 }
+
+
 
 .index .product .content .pro-download a:first-child {
     display: inline-block;
@@ -503,8 +505,9 @@ header {
 
 .whatsapp {
     position: fixed;
-    bottom: 40px;
+    bottom: 190px;
     right: 10px;
+    z-index: 999;
 }
 
 
@@ -552,4 +555,31 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#at-cv-lightbox {
+    display: none !important;
+}
+
+.index .product .product-boxs {
+    position: relative;
+}
+
+.index h3::before {
+    left: 2%;
+}
+
+.index h3 {
+    text-align: left;
+    padding-left: 75px;
+}
+
+.index h3::before,
+.index h3::after {
+    width: 50px;
+
+}
+
+.index h3::after {
+    left: 190px;
 }

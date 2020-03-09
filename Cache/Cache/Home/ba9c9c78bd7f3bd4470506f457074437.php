@@ -18,6 +18,19 @@
     <link rel="stylesheet" href="__PUBLIC__/wap/css/reset.css">
     <link rel="stylesheet" href="__PUBLIC__/wap/css/main.css">
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e5f1a28c32b5c1917396a94/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </head>
 
 <body>
@@ -77,16 +90,20 @@
     <!-- product -->
     <div class="product">
         <a name="about"></a>
-        <h3>PRODUCTS</h3>
+
+        <div class="product-boxs">
+            <h3>PRODUCTS</h3>
+            <div class="product-share">
+                <div class="addthis_inline_share_toolbox_m0jr"></div>
+            </div>
+        </div>
         <div class="box">
             <?php  $_result=M("Product")->field("thumb,title,radis,cont,listorder,id,pcont")->where(" 1  AND status=1  AND catid=73")->order("listorder desc")->limit("12")->select();; if ($_result): $i=0;foreach($_result as $key=>$r):++$i;$mod = ($i % 2 );?><div class="list">
                     <div class="box-img"> <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                         <a href="" target="_blank"><img src="__PUBLIC__/wap/images/link.png" alt=""></a></div>
                     <div class="content">
                         <?php echo ($r["pcont"]); ?>
-                        <div class="product-share">
-                            <div class="addthis_inline_share_toolbox_m0jr"></div>
-                        </div>
+
                     </div>
                 </div><?php endforeach; endif;?>
         </div>

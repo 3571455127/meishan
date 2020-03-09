@@ -317,8 +317,12 @@ header .nav .list .nav-active a {
 
 .index .list .content .txt .pro-download {
     position: absolute;
-    bottom: 0;
-    right: 50px
+    top: 20px;
+    right: 50px;
+}
+
+.index .list .content .txt .pro-download img {
+    width: 18%;
 }
 
 
@@ -709,6 +713,14 @@ footer .copy {
         height: 100%;
         object-fit: cover;
     }
+
+    .index .product .product-share,
+    .index .product .product-share2 {
+        position: absolute;
+        top: 50%;
+        left: 78%;
+        transform: translateY(-50%);
+    }
 }
 
 .emails,
@@ -771,8 +783,8 @@ header .top-bar .infos .wechat:hover .code {
 .at-share-btn-elements .at-svc-twitter,
 .at-share-btn-elements .at-svc-linkedin,
 .at-share-btn-elements .at-svc-pinterest_share {
-    width: 20px !important;
-    height: 20px !important;
+    width: 30px !important;
+    height: 30px !important;
     background-color: transparent !important;
     background-size: cover;
     border-radius: 0 !important;
@@ -809,24 +821,15 @@ header .top-bar .infos .wechat:hover .code {
 .index .product .product-share,
 .index .product .product-share2 {
     position: absolute;
-    top: 20px;
-    right: 50px;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
 }
 
-/* 
-.index .product .product-share .at-svc-pinterest_share {
-    width: 28px !important;
-    height: 28px !important;
-    position: absolute;
-    top: 0;
-    left: -410px;
+.product .product-boxs {
+    position: relative;
 }
 
-.index .product .product-share2 .at-svc-pinterest_share {
-    width: 28px !important;
-    height: 28px !important;
-    position: absolute;
-    top: 0;
-    right: -480px;
-    z-index: 999;
-} */
+#at-cv-lightbox {
+    display: none !important;
+}
