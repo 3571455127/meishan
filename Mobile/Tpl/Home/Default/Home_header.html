@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="__PUBLIC__/wap/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/wap/css/reset.css">
     <link rel="stylesheet" href="__PUBLIC__/wap/css/main.css">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
 </head>
 
 <body>
@@ -28,8 +29,11 @@
                 <img src="__PUBLIC__/www/images/wechat.png" alt="">
                 <span>Wechat:{$phone}</span></div>
             <div class="phone">
-                <img src="__PUBLIC__/www/images/phone.png" alt="">
-                <span>Whatsapp:{$Whatsapp}</span>
+                <a href="https://web.whatsapp.com/send?phone={$Whatsapp}&text={$seo_title}" target="_blank">
+                    <img src="__PUBLIC__/www/images/phone.png" alt="">
+                    <span>Whatsapp:{$Whatsapp}</span>
+                </a>
+
             </div>
         </div>
         <div class="shaer clearfix">

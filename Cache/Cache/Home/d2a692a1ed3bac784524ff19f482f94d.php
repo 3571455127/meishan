@@ -31,6 +31,8 @@
         }
     </style>
     <script type="text/javascript" src="__PUBLIC__/www/js/jquery-3.3.1.min.js"></script>
+   <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
 </head>
 
 <body>
@@ -45,10 +47,13 @@
                     <div class="infos col-lg-9 col-md-9 col-sm-9">
                         <div class="wechat col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <img src="__PUBLIC__/www/images/wechat.png" alt="">
-                            <span>Wechat:<?php echo ($phone); ?></span></div>
+                            <span>Wechat:<?php echo ($phone); ?></span>
+                            <div class="code"><img src="__PUBLIC__/www/images/wechat-code.png" alt=""></div>
+                        </div>
                         <div class="phone col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <img src="__PUBLIC__/www/images/phone.png" alt="">
-                            <a href="https://web.whatsapp.com/send?phone=6592383882&text=" target="_blank">
+                            <a class="whatsa" href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>"
+                                target="_blank">
+                                <img src="__PUBLIC__/www/images/phone.png" alt="">
                                 <span>Whatsapp:<?php echo ($Whatsapp); ?></span></a>
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -124,6 +129,9 @@
                                     alt=""></a>
                         </div>
                         <div class="txt col-lg-6 col-md-6 col-xs-6">
+                            <div class="product-share">
+                                <div class="addthis_inline_share_toolbox_m0jr"></div>
+                            </div>
                             <?php echo ($r["cont"]); ?>
                         </div>
                     </div>
@@ -131,12 +139,16 @@
                     <!-- 文图 -->
                     <div class="content col-lg-6 col-md-6 clearfix">
                         <div class="txt col-lg-6 col-md-6 col-xs-6">
+                           
+                            <div class="product-share2">
+                                <div class="addthis_inline_share_toolbox_m0jr"></div>
+                            </div>
                             <?php echo ($r["cont"]); ?>
                         </div>
                         <div class="box-img col-lg-6 col-md-6 col-xs-6">
                             <img src="<?php echo ($r["thumb"]); ?>" alt="<?php echo ($r["title"]); ?>">
                             <a class="link" href="" target="_blank"><img src="__PUBLIC__/www/images/link.png"
-                                alt=""></a>
+                                    alt=""></a>
                         </div>
                     </div>
                     <?php endif; endforeach; endif;?>
@@ -272,7 +284,7 @@
      </div>
 
      <div class="whatsapp">
-         <a href="https://web.whatsapp.com/send?phone=6592383882&text=" target="_blank"><img
+         <a href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>" target="_blank"><img
                  src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
      </div>
  </footer>

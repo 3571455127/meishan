@@ -85,6 +85,7 @@ header .shaer a {
     position: absolute;
     top: 30px;
     right: 20px;
+    display: none;
 }
 
 .index .product .box-img a img {
@@ -498,4 +499,57 @@ header .info span {
 
 header {
     padding: 0;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+}
+
+
+.at-share-btn-elements .at-svc-facebook,
+.at-share-btn-elements .at-svc-twitter,
+.at-share-btn-elements .at-svc-linkedin,
+.at-share-btn-elements .at-svc-pinterest_share {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: transparent !important;
+    background-size: cover;
+    border-radius: 0 !important;
+}
+
+.at-share-btn-elements .at-svc-email,
+.at-share-btn-elements .at-svc-compact {
+    display: none;
+}
+
+.at-share-btn-elements .at-icon-wrapper svg,
+.at-share-btn-elements .at-share-btn .at-icon-wrapper {
+    display: none;
+
+}
+
+.at-share-btn-elements .at-svc-facebook {
+    background-image: url("../images/pro-facebook.png") !important;
+}
+
+.at-share-btn-elements .at-svc-twitter {
+    background-image: url("../images/pro-twitter.png") !important;
+}
+
+.at-share-btn-elements .at-svc-linkedin {
+    background-image: url("../images/pro-linkedin.png") !important;
+}
+
+.at-share-btn-elements .at-svc-pinterest_share {
+    display: none !important;
+    background-image: url("../images/link.png") !important;
+}
+
+.index .product .product-share,
+.index .product .product-share2 {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

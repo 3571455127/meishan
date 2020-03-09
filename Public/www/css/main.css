@@ -724,6 +724,7 @@ footer .copy {
     position: absolute;
     top: 5%;
     right: 5%;
+    display: none;
 }
 
 .index .product .list .box-img .link img {
@@ -743,3 +744,89 @@ footer .whatsapp a {
 footer .whatsapp img {
     cursor: pointer;
 }
+
+header .top-bar .infos .wechat {
+    position: relative;
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+}
+
+header .top-bar .infos .wechat .code {
+    position: absolute;
+    display: none;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    transition: all .1s ease-in-out;
+    width: 145px;
+    height: 145px;
+}
+
+header .top-bar .infos .wechat:hover .code {
+    display: block;
+}
+
+.at-share-btn-elements .at-svc-facebook,
+.at-share-btn-elements .at-svc-twitter,
+.at-share-btn-elements .at-svc-linkedin,
+.at-share-btn-elements .at-svc-pinterest_share {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: transparent !important;
+    background-size: cover;
+    border-radius: 0 !important;
+}
+
+.at-share-btn-elements .at-svc-email,
+.at-share-btn-elements .at-svc-compact {
+    display: none;
+}
+
+.at-share-btn-elements .at-icon-wrapper svg,
+.at-share-btn-elements .at-share-btn .at-icon-wrapper {
+    display: none;
+
+}
+
+.at-share-btn-elements .at-svc-facebook {
+    background-image: url("../images/pro-facebook.png") !important;
+}
+
+.at-share-btn-elements .at-svc-twitter {
+    background-image: url("../images/pro-twitter.png") !important;
+}
+
+.at-share-btn-elements .at-svc-linkedin {
+    background-image: url("../images/pro-linkedin.png") !important;
+}
+
+.at-share-btn-elements .at-svc-pinterest_share {
+    display: none !important;
+    background-image: url("../images/link.png") !important;
+}
+
+.index .product .product-share,
+.index .product .product-share2 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+/* 
+.index .product .product-share .at-svc-pinterest_share {
+    width: 28px !important;
+    height: 28px !important;
+    position: absolute;
+    top: 0;
+    left: -410px;
+}
+
+.index .product .product-share2 .at-svc-pinterest_share {
+    width: 28px !important;
+    height: 28px !important;
+    position: absolute;
+    top: 0;
+    right: -480px;
+    z-index: 999;
+} */

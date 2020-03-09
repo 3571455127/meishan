@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="__PUBLIC__/wap/css/bootstrap.min.css">
     <link rel="stylesheet" href="__PUBLIC__/wap/css/reset.css">
     <link rel="stylesheet" href="__PUBLIC__/wap/css/main.css">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
 </head>
 
 <body>
@@ -28,8 +29,11 @@
                 <img src="__PUBLIC__/www/images/wechat.png" alt="">
                 <span>Wechat:<?php echo ($phone); ?></span></div>
             <div class="phone">
-                <img src="__PUBLIC__/www/images/phone.png" alt="">
-                <span>Whatsapp:<?php echo ($Whatsapp); ?></span>
+                <a href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>" target="_blank">
+                    <img src="__PUBLIC__/www/images/phone.png" alt="">
+                    <span>Whatsapp:<?php echo ($Whatsapp); ?></span>
+                </a>
+
             </div>
         </div>
         <div class="shaer clearfix">
@@ -80,6 +84,9 @@
                         <a href="" target="_blank"><img src="__PUBLIC__/wap/images/link.png" alt=""></a></div>
                     <div class="content">
                         <?php echo ($r["pcont"]); ?>
+                        <div class="product-share">
+                            <div class="addthis_inline_share_toolbox_m0jr"></div>
+                        </div>
                     </div>
                 </div><?php endforeach; endif;?>
         </div>
@@ -148,40 +155,47 @@
 
 </div>
 <footer>
-        <div class="info">
-            <div class="box">
-                <ul>
-                    <li>
-                        <div class="box-img"> <img src="__PUBLIC__/wap/images/address.png" alt=""></div>
-                        <div class="txt"><?php echo ($address); ?></div>
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/url.png" alt=""></div><?php echo ($wwwurl); ?>
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/phone-b.png" alt=""></div><?php echo ($phonea); ?>
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/fax.png" alt=""></div><?php echo ($domestic_fax); ?>
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div><a href="" target="_blank" class="emails"> <span><?php echo ($email); ?></span></a>
-                    </li>
+    <div class="info">
+        <div class="box">
+            <ul>
+                <li>
+                    <div class="box-img"> <img src="__PUBLIC__/wap/images/address.png" alt=""></div>
+                    <div class="txt"><?php echo ($address); ?></div>
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/url.png" alt=""></div><?php echo ($wwwurl); ?>
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/phone-b.png" alt=""></div><?php echo ($phonea); ?>
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/fax.png" alt=""></div><?php echo ($domestic_fax); ?>
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div>
+                    <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
+                        <span><?php echo ($email); ?></span> </a>
+                </li>
 
-                    <li>COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</li>
-                </ul>
-            </div>
-            <div class="copy">
-                <?php echo ($cop); ?>
-            </div>
+                <li>COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</li>
+            </ul>
         </div>
+        <div class="copy">
+            <?php echo ($cop); ?>
+        </div>
+    </div>
 
-        <!-- gotop -->
-        <div class="goTop" style="display: block;">
-            <i class="topIcon"></i>
-            <p>TOP</p>
-        </div>
-    </footer>
+    <!-- gotop -->
+    <div class="goTop" style="display: block;">
+        <i class="topIcon"></i>
+        <p>TOP</p>
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>" target="_blank"><img
+                src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
+    </div>
+</footer>
 
 </body>
 <!-- js -->

@@ -1,38 +1,45 @@
 <footer>
-        <div class="info">
-            <div class="box">
-                <ul>
-                    <li>
-                        <div class="box-img"> <img src="__PUBLIC__/wap/images/address.png" alt=""></div>
-                        <div class="txt">{$address}</div>
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/url.png" alt=""></div>{$wwwurl}
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/phone-b.png" alt=""></div>{$phonea}
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/fax.png" alt=""></div>{$domestic_fax}
-                    </li>
-                    <li>
-                        <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div><a href="" target="_blank" class="emails"> <span>{$email}</span></a>
-                    </li>
+    <div class="info">
+        <div class="box">
+            <ul>
+                <li>
+                    <div class="box-img"> <img src="__PUBLIC__/wap/images/address.png" alt=""></div>
+                    <div class="txt">{$address}</div>
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/url.png" alt=""></div>{$wwwurl}
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/phone-b.png" alt=""></div>{$phonea}
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/fax.png" alt=""></div>{$domestic_fax}
+                </li>
+                <li>
+                    <div class="box-img"><img src="__PUBLIC__/wap/images/email.png" alt=""></div>
+                    <a href="mailto:{$email}" target="_blank" class="emails">
+                        <span>{$email}</span> </a>
+                </li>
 
-                    <li>COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</li>
-                </ul>
-            </div>
-            <div class="copy">
-                {$cop}
-            </div>
+                <li>COPYRIGHT 2020 DISPLAY ALL RIGHTS RESERVED</li>
+            </ul>
         </div>
+        <div class="copy">
+            {$cop}
+        </div>
+    </div>
 
-        <!-- gotop -->
-        <div class="goTop" style="display: block;">
-            <i class="topIcon"></i>
-            <p>TOP</p>
-        </div>
-    </footer>
+    <!-- gotop -->
+    <div class="goTop" style="display: block;">
+        <i class="topIcon"></i>
+        <p>TOP</p>
+    </div>
+
+    <div class="whatsapp">
+        <a href="https://web.whatsapp.com/send?phone={$Whatsapp}&text={$seo_title}" target="_blank"><img
+                src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
+    </div>
+</footer>
 
 </body>
 <!-- js -->
