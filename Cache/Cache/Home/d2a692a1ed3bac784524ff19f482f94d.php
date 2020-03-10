@@ -31,41 +31,44 @@
         }
     </style>
     <script type="text/javascript" src="__PUBLIC__/www/js/jquery-3.3.1.min.js"></script>
-   <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e5f1a28c32b5c1917396a94/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-<script>
-     function IsPC() {
-          var userAgentInfo = navigator.userAgent;
-          var Agents = ["Android", "iPhone",
-                      "SymbianOS", "Windows Phone",
-                      "iPad", "iPod"];
-          var flag = true;
-          for (var v = 0; v < Agents.length; v++) {
-              if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                  flag = false;
-                 break;
-             }
-         }
-         return flag;
-      }
-      var isp = IsPC();
-      if(!isp){
-            window.location.href="/mobile.php";
-      }
-</script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e65b5d53a9fd537"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e5f1a28c32b5c1917396a94/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script>
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"
+            ];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        var isp = IsPC();
+        if (!isp) {
+            window.location.href = "/mobile.php";
+        }
+    </script>
 </head>
 
 <body>
@@ -84,10 +87,9 @@ s0.parentNode.insertBefore(s1,s0);
                             <div class="code"><img src="__PUBLIC__/www/images/wechat-code.png" alt=""></div>
                         </div>
                         <div class="phone col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <a class="whatsa" href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>"
-                                target="_blank">
+                            <a class="whatsa" href="https://wa.me/86<?php echo ($Whatsapp); ?>?text=<?php echo ($seo_title); ?>" target="_blank">
                                 <img src="__PUBLIC__/www/images/phone.png" alt="">
-                                <span>Whatsapp:<?php echo ($Whatsapp); ?></span></a>
+                                <span>Whatsapp:+86 <?php echo ($Whatsapp); ?></span></a>
                         </div>
                         <div class="email col-lg-4 col-md-4 col-sm-4 col-xs-4">
                             <a href="mailto:<?php echo ($email); ?>" target="_blank" class="emails">
@@ -311,7 +313,7 @@ s0.parentNode.insertBefore(s1,s0);
      </div>
 
      <div class="whatsapp">
-         <a href="https://web.whatsapp.com/send?phone=<?php echo ($Whatsapp); ?>&text=<?php echo ($seo_title); ?>" target="_blank"><img
+         <a href="https://wa.me/86<?php echo ($Whatsapp); ?>?text=<?php echo ($seo_title); ?>" target="_blank"><img
                  src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
      </div>
  </footer>
