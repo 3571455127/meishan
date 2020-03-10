@@ -313,7 +313,7 @@
      </div>
 
      <div class="whatsapp">
-         <a href="https://wa.me/86<?php echo ($Whatsapp); ?>?text=Hello%20my%20friend%2C%20welcome%20to%20have%20a%20chat%20with%20me%20Max%20Prefab.%20How%20can%20i%20help%20you%3F" target="_blank"><img
+         <a href="https://wa.me/86<?php echo ($Whatsapp); ?>?text=<?php echo ($Whatsapptitle); ?>" target="_blank"><img
                  src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
      </div>
  </footer>

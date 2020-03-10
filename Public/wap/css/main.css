@@ -565,21 +565,23 @@ header {
     position: relative;
 }
 
-.index h3::before {
-    left: 2%;
-}
-
-.index h3 {
+.index .product .product-boxs h3 {
     text-align: left;
     padding-left: 75px;
 }
 
-.index h3::before,
-.index h3::after {
+.index .product .product-boxs h3::before {
+    left: 2%;
+}
+
+
+
+.index .product .product-boxs h3::before,
+.index .product .product-boxs h3::after {
     width: 50px;
 
 }
 
-.index h3::after {
+.index .product .product-boxs h3::after {
     left: 190px;
 }
