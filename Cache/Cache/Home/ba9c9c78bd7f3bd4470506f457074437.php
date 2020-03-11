@@ -211,10 +211,10 @@
         <p>TOP</p>
     </div>
 
-    <div class="whatsapp">
+    <!-- <div class="whatsapp">
         <a href="https://wa.me/86<?php echo ($Whatsapp); ?>?text=<?php echo ($Whatsapptitle); ?>" target="_blank"><img
                 src="__PUBLIC__/www/images/whatsapp.png" alt=""></a>
-    </div>
+    </div> -->
 </footer>
 
 </body>
