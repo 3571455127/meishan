@@ -585,3 +585,29 @@ header {
 .index .product .product-boxs h3::after {
     left: 190px;
 }
+
+
+/* thank */
+.thank {
+    padding: 5%;
+    text-align: center;
+}
+
+.thank h5,
+.thank p {
+    line-height: 1.4;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.thank .back {
+    padding-left: 10px;
+    width: 32px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#sec {
+    color: #fe641d;
+}
