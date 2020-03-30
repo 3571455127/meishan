@@ -158,7 +158,8 @@
     <div class="contact">
         <a name="contact"></a>
         <h3>Contact Us</h3>
-        <form target="_blank" name="SubscriberForm" id="form1" style="" action="https://www.anpasia.com/public/process-subscription-form.aspx?formId=47435C407440475143"
+        <form target="_blank" name="SubscriberForm" id="form1" style=""
+            action="https://www.anpasia.com/public/process-subscription-form.aspx?formId=47435C407440475143"
             onSubmit="return MailingListValidation(this);" method="post">
             <input type="text" name="namekjsd" class="i-cannot-be-spotted" />
             <input type="hidden" name="pf_FormType" value="OptInForm">
@@ -199,7 +200,7 @@
                         </div>
                         <div class="box">
                             <p>
-                                Company <span>*</span>
+                                Country <span>*</span>
                             </p>
                             <input type="text" name="pf_Demographicfield1" />
                         </div>
@@ -231,7 +232,6 @@
                                 <option value="MODERNISM">MODERNISM</option>
                                 <option value="Others">Others</option>
                             </select>
-
                         </div>
                         <div class="box">
                             <p>

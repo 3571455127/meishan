@@ -97,7 +97,6 @@ function MailingListValidation(SubscriberForm) {
 
 }
 function resetform() {
-    //    alert(1);
     $('.reset').click();
 }
 $('.submit-btn').click(function () {
