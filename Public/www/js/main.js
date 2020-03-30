@@ -55,31 +55,31 @@ $(function () {
 
 var submitcount2 = 0;
 
-function beforeSubmit2(form) {
+function MailingListValidation(SubscriberForm) {
 
-    if (form.name.value == '') {
+    if (SubscriberForm.pf_SubscriberName.value == '') {
         alert('Name can not be empty');
-        form.name.focus();
+        SubscriberForm.pf_SubscriberName.focus();
         return false;
-    } else if (form.email.value == '') {
+    } else if (SubscriberForm.pf_Email.value == '') {
         alert('Please enter the correct email format');
-        form.email.focus();
+        SubscriberForm.pf_Email.focus();
         return false;
-    } else if (form.email.value.indexOf('@') < 0) {
+    } else if (SubscriberForm.pf_Email.value.indexOf('@') < 0) {
         alert('The email is wrong');
-        form.email.focus();
+        SubscriberForm.pf_Email.focus();
         return false;
-    } else if (form.phone.value == '') {
+    } else if (SubscriberForm.pf_Demographicfield2.value == '') {
         alert('The cellphone can not be empty');
-        form.phone.focus();
+        SubscriberForm.pf_Demographicfield2.focus();
         return false;
-    } else if (form.cellphone.value.length < 11) {
+    } else if (SubscriberForm.pf_Demographicfield2.value.length < 5) {
         alert('The phone is wrong');
-        form.phone.focus();
+        SubscriberForm.pf_Demographicfield2.focus();
         return false;
-    } else if (form.counntry.value == '') {
-        alert('The counntry can not be empty');
-        form.counntry.focus();
+    } else if (SubscriberForm.pf_Demographicfield1.value == '') {
+        alert('The Country can not be empty');
+        SubscriberForm.pf_Demographicfield1.focus();
         return false;
     } else {
 

@@ -127,8 +127,6 @@
                     </div>
                 </div>
 
-
-
             </div>
         </div>
     </div>
@@ -141,17 +139,216 @@
             <div class="row">
                 <div class="title">If you are looking for a Trusted Partner, Please do not hesitate to contact us.
                 </div>
-                <form name="form" method="post" onsubmit="return beforeSubmit2(this);"
-                    action="index.php?g=Home&a=message">
+                <form target="_blank" name="SubscriberForm" method="post" onsubmit="return MailingListValidation(this);"
+                    action="https://www.anpasia.com/public/process-subscription-form.aspx?formId=47435C407440475143">
                     <input name="forward" type="hidden"
                         value="{$_SERVER['SERVER_NAME']}{if $catid}/index.php?m={$Categorys[$catid]['module']}&a=index&id={$catid}{else}/index.php{/if}" />
+
                     <div class="clearfix" style="padding-bottom:20px">
-                        <?php getcatvar('page','id = 78','cont');?>
+                        <!-- <?php getcatvar('page','id = 78','cont');?> -->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <p>
+                                    Name <span> *</span>
+                                </p>
+                                <input type="text" name="pf_SubscriberName" />
+                            </div>
+                            <div class="box">
+                                <p>
+                                    Date of Birth
+                                </p>
+                                <input type="text" name="pf_Demographicfield26" />
+                            </div>
+                            <div class="box">
+                                <p>
+                                    Cellphone <span> *</span>
+                                </p>
+                                <input type="text" name="pf_Demographicfield2" />
+                            </div>
+                            <div class="box">
+                                <p>
+                                    Website of Social Media Account
+                                </p>
+                                <input type="text" name="pf_Demographicfield35" />
+                            </div>
+                            <div class="box">
+                                <p>
+                                    Country <span> *</span>
+                                </p>
+                                <input type="text" name="pf_Demographicfield1" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="box">
+                                <p>
+                                    Email <span>*</span>
+                                </p>
+                                <input type="text" name="pf_Email" />
+                            </div>
+                            <div class="box need">
+                                <p> What Do I Need </p>
+                                <select name="pf_Demographicfield37">
+                                    <option value="EASYFOLD02" selected>EASYFOLD02
+                                    </option>
+                                    <option value="KNOCKDOWN03">KNOCKDOWN03</option>
+                                    <option value="FLATPACK01">FLATPACK01</option>
+                                    <option value="FLATPACK02">FLATPACK02</option>
+                                    <option value="FLATPACK03">FLATPACK03</option>
+                                    <option value="EXPANDABLE02">EXPANDABLE02</option>
+                                    <option value="K-MODULES">K-MODULES</option>
+                                    <option value="PORTABLE01">PORTABLE01</option>
+                                    <option value="KNOCKDOWN01">KNOCKDOWN01</option>
+                                    <option value="TRAILERC01">TRAILERC01</option>
+                                    <option value="GUARDHOUSE">GUARDHOUSE</option>
+                                    <option value="PANELS">PANELS</option>
+                                    <option value="MODERNISM">MODERNISM</option>
+                                    <option value="Others">Others</option>
+                                </select>
+
+                            </div>
+                            <div class="box">
+                                <p>
+                                    Message for max Prefab
+                                </p>
+                                <textarea name="pf_Demographicfield14"></textarea>
+                            </div>
+                            <div class="box">
+                                <!-- Do not change name or type on submit button, to change visible text, change text for \&quot;value\&quot; -->
+                                <input type="hidden" name="pf_FormType" value="OptInForm">
+                                <input type="hidden" name="pf_OptInMethod" value="SingleOptInMethod">
+                                <input type="hidden" name="pf_CounterDemogrFields" value="6">
+                                <input type="hidden" name="pf_CounterMailinglists" value="1">
+                                <input type="hidden" name="pf_AccountId" value="2287">
+                                <input type="hidden" name="pf_ListById" value="1">
+                                <input type="hidden" name="pf_Version" value="2">
+                                <input type="hidden" name="pf_MailinglistName1" value="228963">
+                            </div>
+                            <div>
+                                <select name="pf_DeliveryFormat" style="display:none;">
+                                    <option value="HTML" selected>HTML</option>
+                                    <option value="Text">Text</option>
+                                </select>
+                            </div>
+                        </div>
+
                     </div>
                     <input type="submit" value="SUBMIT" class="submit-btn">
                 </form>
             </div>
         </div>
+
+        <!-- <div class="need">
+           <script language="JavaScript">
+                function MailingListValidation(SubscriberForm){
+                var counter = 0;
+                for (i=1; i<=SubscriberForm.pf_CounterMailinglists.value; i++)
+                {
+                var checkBoxName = "pf_MailinglistName" + i;
+                if (document.getElementsByName(checkBoxName)[0].checked || document.getElementsByName(checkBoxName)[0].type == "hidden") counter++; 
+                }
+                if (counter == 0)
+                {
+                alert("One or more mailing lists are required for this form.");
+                return false; }
+                }//
+        </script>
+        <style>
+            .i-cannot-be-spotted {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 0;
+                z-index: -1;
+            }
+        </style>
+        <form name="SubscriberForm" style="text-align:left; font-family: arial, sans-serif; font-size: 12pt;"
+            action="https://www.anpasia.com/public/process-subscription-form.aspx?formId=47435C407440475143"
+            onSubmit="return MailingListValidation(this);" method="post">
+            <input type="text" name="namekjsd" class="i-cannot-be-spotted" />
+            <table cellspacing="0" cellpadding="2px">
+                <tr>
+                    <td>
+                        Name*<br /><input type="text" name="pf_SubscriberName" value="" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Email*<br /><input type="text" name="pf_Email" value="" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth<br /><input type="text" name="pf_Demographicfield26" value="" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Cellphone*<br /><input type="text" name="pf_Demographicfield2" value="" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Website or Social Media Account<br /><input type="text" name="pf_Demographicfield35" value=""
+                            size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Country*<br /><input type="text" name="pf_Demographicfield1" value="" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        What Do I Need<br /><select name="pf_Demographicfield37">
+                            <option value="EASYFOLD02" selected>EASYFOLD02</option>
+                            <option value="KNOCKDOWN03">KNOCKDOWN03</option>
+                            <option value="FLATPACK01">FLATPACK01</option>
+                            <option value="FLATPACK02">FLATPACK02</option>
+                            <option value="FLATPACK03">FLATPACK03</option>
+                            <option value="EXPANDABLE02">EXPANDABLE02</option>
+                            <option value="K-MODULES">K-MODULES</option>
+                            <option value="PORTABLE01">PORTABLE01</option>
+                            <option value="KNOCKDOWN01">KNOCKDOWN01</option>
+                            <option value="TRAILERC01">TRAILERC01</option>
+                            <option value="GUARDHOUSE">GUARDHOUSE</option>
+                            <option value="PANELS">PANELS</option>
+                            <option value="MODERNISM">MODERNISM</option>
+                            <option value="Others">Others</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        Message for Max Prefab<br /><input type="text" name="pf_Demographicfield14" value="" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="pf_DeliveryFormat" style="display:none;">
+                            <option value="HTML" selected>HTML</option>
+                            <option value="Text">Text</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="Submit" value="Submit"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Do not change name or type on submit button, to change visible text, change text for \&quot;value\&quot; 
+                    <input type="hidden" name="pf_FormType" value="OptInForm">
+                    <input type="hidden" name="pf_OptInMethod" value="SingleOptInMethod">
+                    <input type="hidden" name="pf_CounterDemogrFields" value="6">
+                    <input type="hidden" name="pf_CounterMailinglists" value="1">
+                    <input type="hidden" name="pf_AccountId" value="2287">
+                    <input type="hidden" name="pf_ListById" value="1">
+                    <input type="hidden" name="pf_Version" value="2">
+                    <input type="hidden" name="pf_MailinglistName1" value="228963">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div> -->
+
 
     </div>
 </div>
