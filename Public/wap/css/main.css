@@ -315,7 +315,8 @@ header .shaer a {
     margin-right: 5%;
 }
 
-.index .contact form input {
+.index .contact form input,
+.need select {
     width: 100%;
     height: 24px;
     line-height: 24px;
@@ -343,7 +344,7 @@ header .shaer a {
 
 .index .contact form textarea {
     width: 100%;
-    height: 200px;
+    height: 148px;
     background-color: #f1f0f0;
     border: 1px solid #9a9993;
 }
@@ -362,7 +363,7 @@ header .shaer a {
 .index .contact form .btn-box {
     text-align: center;
     font-weight: 600;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* footer */
@@ -610,4 +611,14 @@ header {
 
 #sec {
     color: #fe641d;
+}
+
+.i-cannot-be-spotted {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
 }

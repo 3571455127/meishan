@@ -158,15 +158,109 @@
     <div class="contact">
         <a name="contact"></a>
         <h3>Contact Us</h3>
-        <form name="form" method="post" onsubmit="return beforeSubmit2(this);" action="index.php?g=Home&a=message">
+        <form target="_blank" name="SubscriberForm" id="form1" style="" action="https://www.anpasia.com/public/process-subscription-form.aspx?formId=47435C407440475143"
+            onSubmit="return MailingListValidation(this);" method="post">
+            <input type="text" name="namekjsd" class="i-cannot-be-spotted" />
+            <input type="hidden" name="pf_FormType" value="OptInForm">
+            <input type="hidden" name="pf_OptInMethod" value="SingleOptInMethod">
+            <input type="hidden" name="pf_CounterDemogrFields" value="6">
+            <input type="hidden" name="pf_CounterMailinglists" value="1">
+            <input type="hidden" name="pf_AccountId" value="2287">
+            <input type="hidden" name="pf_ListById" value="1">
+            <input type="hidden" name="pf_Version" value="2">
+            <input type="hidden" name="pf_MailinglistName1" value="228963">
             <div class="clearfix">
-                <input name="forward" type="hidden"
-                    value="<?php echo ($_SERVER['SERVER_NAME']); if($catid) : ?>/index.php?m=<?php echo ($Categorys[$catid]['module']); ?>&a=index&id=<?php echo ($catid); else :?>/index.php<?php endif;?>" />
                 <div class="clearfix" style="padding-bottom:20px">
-                    <?php getcatvar('page','id = 78','pcont');?>
+                    <!-- <?php getcatvar('page','id = 78','pcont');?> -->
+                    <div class="left">
+                        <div class="box">
+                            <p>
+                                Name <span>*</span>
+                            </p>
+                            <input type="text" name="pf_SubscriberName" />
+                        </div>
+                        <div class="box">
+                            <p>
+                                Date of Birth
+                            </p>
+                            <input type="text" name="pf_Demographicfield26" />
+                        </div>
+                        <div class="box">
+                            <p>
+                                Cellphone <span>*</span>
+                            </p>
+                            <input type="text" name="pf_Demographicfield2" />
+                        </div>
+                        <div class="box">
+                            <p>
+                                Website or Social Media Account
+                            </p>
+                            <input type="text" name="pf_Demographicfield35" />
+                        </div>
+                        <div class="box">
+                            <p>
+                                Company <span>*</span>
+                            </p>
+                            <input type="text" name="pf_Demographicfield1" />
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="box">
+                            <p>
+                                Email <span>*</span>
+                            </p>
+                            <input type="text" name="pf_Email" />
+                        </div>
+                        <div class="box need">
+                            <p> What Do I Need </p>
+                            <select name="pf_Demographicfield37">
+                                <option value="EASYFOLD02" selected>EASYFOLD02
+                                </option>
+                                <option value="KNOCKDOWN03">KNOCKDOWN03</option>
+                                <option value="FLATPACK01">FLATPACK01</option>
+                                <option value="FLATPACK02">FLATPACK02</option>
+                                <option value="FLATPACK03">FLATPACK03</option>
+                                <option value="EXPANDABLE02">EXPANDABLE02</option>
+                                <option value="K-MODULES">K-MODULES</option>
+                                <option value="PORTABLE01">PORTABLE01</option>
+                                <option value="KNOCKDOWN01">KNOCKDOWN01</option>
+                                <option value="TRAILERC01">TRAILERC01</option>
+                                <option value="GUARDHOUSE">GUARDHOUSE</option>
+                                <option value="PANELS">PANELS</option>
+                                <option value="MODERNISM">MODERNISM</option>
+                                <option value="Others">Others</option>
+                            </select>
+
+                        </div>
+                        <div class="box">
+                            <p>
+                                Message for Max Prefab
+                            </p>
+                            <textarea name="pf_Demographicfield14"></textarea>
+                        </div>
+                        <div class="box">
+                            <!-- Do not change name or type on submit button, to change visible text, change text for \&quot;value\&quot; -->
+                            <input type="hidden" name="pf_FormType" value="OptInForm">
+                            <input type="hidden" name="pf_OptInMethod" value="SingleOptInMethod">
+                            <input type="hidden" name="pf_CounterDemogrFields" value="6">
+                            <input type="hidden" name="pf_CounterMailinglists" value="1">
+                            <input type="hidden" name="pf_AccountId" value="2287">
+                            <input type="hidden" name="pf_ListById" value="1">
+                            <input type="hidden" name="pf_Version" value="2">
+                            <input type="hidden" name="pf_MailinglistName1" value="228963">
+                        </div>
+                        <div>
+                            <select name="pf_DeliveryFormat" style="display:none;">
+                                <option value="HTML" selected>HTML</option>
+                                <option value="Text">Text</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="btn-box">
                     <input type="submit" value="SUBMIT" class="submit-btn">
+                    <input type="reset" value="reset" class="reset" style="display: none;">
                 </div>
 
         </form>
